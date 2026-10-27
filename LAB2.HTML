@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <LINK rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Travel Booking</h1>
+        <p>Book your journey easily!</p>
+    </header>
+
+    <div class="container">
+        <form>
+            <h2>Search Your Journey</h2>
+            <div class="fields">
+                <div>
+                    <label>Source</label>
+                    <input type="text" placeholder="Enter source city" required>
+                </div>
+                <div>
+                    <label>Destination</label>
+                    <input type="text" placeholder="Enter destination" required>
+                </div>
+                <div>
+                    <label>Travel Date</label>
+                    <input type="date" required>
+                </div>
+                <div>
+                    <label>Passengers</label>
+                    <select>
+                        <option>1 Passenger</option>
+                        <option>2 Passengers</option>
+                        <option>3 Passengers</option>
+                        <option>4 Passengers</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button">Search Buses</button>
+        </form>
+
+        <h2>Available Services</h2>
+        <div class="card">
+            <h3>Express Travels</h3>
+            <p>Service: AC Sleeper Bus</p>
+            <p>Departure: 09:00 PM | Arrival: 06:00 AM</p>
+            <p><b>Fare: ₹900 per passenger</b></p>
+            <button type="button">Select Bus</button>
+        </div>
+
+        <div class="card">
+            <h3>Super Luxury Travels</h3>
+            <p>Service: Non-AC Seater Bus</p>
+            <p>Departure: 08:00 PM | Arrival: 05:00 AM</p>
+            <p><b>Fare: ₹600 per passenger</b></p>
+            <button type="button">Select Bus</button>
+        </div>
+
+        <form>
+            <h2>Passenger Details</h2>
+            <div class="fields">
+                <div>
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label>Age</label>
+                    <input type="number" min="1" placeholder="Enter age" required>
+                </div>
+                <div>
+                    <label>Gender</label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <h3>Select Your Seat</h3>
+            <div class="seats">
+                <label><input type="checkbox"> A1</label>
+                <label><input type="checkbox"> A2</label>
+                <label><input type="checkbox"> A3</label>
+                <label><input type="checkbox"> A4</label>
+                <label><input type="checkbox"> B1</label>
+                <label><input type="checkbox"> B2</label>
+                <label><input type="checkbox"> B3</label>
+                <label><input type="checkbox"> B4</label>
+            </div>
+
+            <h3>Fare Information</h3>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Fare</th>
+                </tr>
+                <tr>
+                    <td>AC Sleeper</td>
+                    <td>₹900</td>
+                </tr>
+                <tr>
+                    <td>Non-AC Seater</td>
+                    <td>₹600</td>
+                </tr>
+            </table>
+            <br>
+            <button type="submit">Book Ticket</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2026 Travel Booking Website</p>
+    </footer>
+</body>
+
+</html>
